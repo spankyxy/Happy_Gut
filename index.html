@@ -1,62 +1,119 @@
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: auto;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service — HappyGut</title>
+  <meta name="description" content="Terms of Service for the HappyGut mobile application - informational purposes only. Read the full terms, disclaimer, account rules, and contact information." />
+  <style>
+    :root{--bg:#f8fafc;--card:#ffffff;--muted:#6b7280;--accent:#0ea5a4;--max:900px}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.6;color:#111827;background:var(--bg);padding:24px}
+    .container{max-width:var(--max);margin:0 auto}
+    header{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+    header img{width:56px;height:56px;border-radius:10px;object-fit:cover;box-shadow:0 2px 8px rgba(2,6,23,0.08)}
+    h1{font-size:1.6rem;margin:0}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+    nav{margin:12px 0}
+    nav a{color:var(--accent);text-decoration:none;margin-right:12px;font-weight:600}
+    section{margin-top:18px}
+    h2{font-size:1.05rem;margin:0 0 8px}
+    p{margin:0 0 12px;color:#111827}
+    .muted{color:var(--muted)}
+    footer{margin-top:18px;font-size:0.9rem;color:var(--muted)}
+    .small{font-size:0.95rem}
+    ul{margin:8px 0 12px 20px}
+    code{background:#f1f5f9;padding:2px 6px;border-radius:6px;font-family:monospace}
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Terms of Service</h1>
-        <p>Last updated: 03.04.2025</p>
-        
-        <h2>1. Introduction</h2>
-        <p>Welcome to WellDose: Pill Reminder. By accessing or using our service, you agree to be bound by these Terms of Service.</p>
-        
-        <h2>2. Use of Service</h2>
-        <p>You agree to use our service only for lawful purposes and in compliance with all applicable laws.</p>
-        
-        <h2>3. User Accounts</h2>
-        <p>To access some features, you may need to create an account. You are responsible for maintaining the confidentiality of your account information.</p>
-        
-        <h2>4. Subscription & Payments</h2>
-        <p>WellDose: Pill Reminder offers subscription-based services. By purchasing a subscription, you agree to the following:</p>
-        <ul>
-            <li>Payments are processed through the Apple App Store.</li>
-            <li>Subscriptions are billed on a recurring basis (weekly, monthly, or yearly).</li>
-            <li>You can manage or cancel your subscription via your Apple ID settings.</li>
-            <li>No refunds will be provided for unused portions of the subscription period.</li>
-        </ul>
-        
-        <h2>5. Free Trials</h2>
-        <p>We may offer a free trial period. Once the trial ends, the subscription fee will be automatically charged unless canceled before the trial period expires.</p>
-        
-        <h2>6. Termination</h2>
-        <p>We reserve the right to suspend or terminate your access to our service if you violate these terms.</p>
-        
-        <h2>7. Changes to Terms</h2>
-        <p>We may update these terms from time to time. Your continued use of the service after changes means you accept the new terms.</p>
-        
-        <h2>8. Contact Us</h2>
-        <p>If you have any questions, please contact us at hamzacanbazdev@gmail.com.</p>
+  <div class="container">
+    <header>
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='%230ea5a4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M12 2C8 2 4 4 3 8c1 3 5 4 9 12 4-8 8-9 9-12-1-4-5-6-9-6z'/></svg>" alt="HappyGut logo" />
+      <div>
+        <h1>Terms of Service — HappyGut</h1>
+        <div class="muted small">Effective Date: <strong>[Insert Date]</strong></div>
+      </div>
+    </header>
+
+    <div class="card">
+      <nav aria-label="Terms navigation">
+        <a href="#use">1. Use of the App</a>
+        <a href="#disclaimer">2. Health Disclaimer</a>
+        <a href="#accounts">3. Accounts & Data</a>
+        <a href="#content">4. User Content</a>
+        <a href="#ip">5. Intellectual Property</a>
+        <a href="#payments">6. Subscriptions & Purchases</a>
+        <a href="#termination">7. Termination</a>
+        <a href="#liability">8. Limitation of Liability</a>
+        <a href="#changes">9. Changes to Terms</a>
+        <a href="#contact">10. Contact</a>
+      </nav>
+
+      <section id="intro">
+        <p class="small muted">Welcome to <strong>HappyGut</strong>! These Terms of Service ("Terms") govern your use of the HappyGut mobile application (the "App") provided by <strong>[Your Company/Developer Name]</strong> ("we," "our," or "us"). By downloading, installing or using the App you agree to be bound by these Terms. If you do not agree, please do not use the App.</p>
+      </section>
+
+      <section id="use">
+        <h2>1. Use of the App</h2>
+        <p>HappyGut is intended for <strong>informational and educational purposes only</strong>. You must be at least <strong>17 years old</strong> to use the App. You agree to use HappyGut only for lawful purposes and in accordance with these Terms.</p>
+      </section>
+
+      <section id="disclaimer">
+        <h2>2. Health Disclaimer</h2>
+        <p>HappyGut <strong>does not provide medical advice</strong>. The information and content provided by the App is for general informational purposes only and is not a substitute for professional medical diagnosis, advice, or treatment. Always consult a qualified healthcare provider regarding any medical questions or conditions.</p>
+        <p><strong>Emergency:</strong> If you are experiencing a medical emergency, call your local emergency number immediately.</p>
+      </section>
+
+      <section id="accounts">
+        <h2>3. Accounts and Data</h2>
+        <p>Some features of the App may require an account or the submission of personal information. You are responsible for maintaining the confidentiality of your account credentials and for all activity that occurs under your account.</p>
+        <p>By using the App, you consent to our collection and processing of information as described in our <a href="#privacy">Privacy Policy</a>. If you share or store health-related data, be aware of how that data may be used or synchronized (for example, with iCloud or other services).</p>
+      </section>
+
+      <section id="content">
+        <h2>4. User Content</h2>
+        <p>If the App allows you to enter, upload, or save content such as food logs, notes, or preferences, you retain ownership of that content. By submitting content through the App, you grant us a non-exclusive, worldwide, royalty-free license to use, store, and display the content for the purpose of operating and improving the App.</p>
+      </section>
+
+      <section id="ip">
+        <h2>5. Intellectual Property</h2>
+        <p>All rights, title and interest in and to the App (including its design, code, images, text and other content) are owned by us or our licensors. You may not copy, modify, distribute, sell, or reverse-engineer the App, or any portion of it, without our prior written permission.</p>
+      </section>
+
+      <section id="payments">
+        <h2>6. Subscriptions & Purchases</h2>
+        <p>Certain features may be available via in-app purchases or subscriptions. Purchases are processed through Apple’s App Store and are subject to their terms. Subscription payments will be charged to your Apple ID at the time of purchase and will renew automatically unless canceled via your App Store account settings.</p>
+      </section>
+
+      <section id="termination">
+        <h2>7. Termination</h2>
+        <p>We may suspend or terminate your access to the App if you violate these Terms or misuse the App. You may stop using the App at any time. If you delete and reinstall the app, please note that some data may persist outside the app sandbox (for example, Keychain or iCloud-stored data) unless explicitly removed.</p>
+      </section>
+
+      <section id="liability">
+        <h2>8. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, we are not liable for any indirect, incidental, consequential, or punitive damages arising from your use of the App. The App is provided on an "as is" and "as available" basis without warranties of any kind.</p>
+      </section>
+
+      <section id="changes">
+        <h2>9. Changes to Terms</h2>
+        <p>We may update these Terms from time to time. When we do, we will post the updated Terms in the App or on our website and update the Effective Date above. Continued use of the App after changes means you accept the updated Terms.</p>
+      </section>
+
+      <section id="contact">
+        <h2>10. Contact Us</h2>
+        <p>If you have questions about these Terms, please contact us at: <strong>[support@example.com]</strong></p>
+      </section>
+
+      <section id="legal-note" style="margin-top:16px;padding-top:10px;border-top:1px solid #eef2f7">
+        <p class="muted small">⚠️ <strong>Legal notice:</strong> This document is a general template and does not constitute legal advice. If your app processes sensitive health data, includes diagnosis or treatment recommendations, or operates in regulated markets, consult a lawyer to ensure compliance with applicable laws and App Store requirements.</p>
+      </section>
+
+      <footer>
+        <p class="muted">HappyGut • <a href="#privacy" style="color:var(--accent)">Privacy Policy</a> • <span aria-hidden="true">&middot;</span> <span>Version: 1.0</span></p>
+      </footer>
     </div>
+  </div>
 </body>
 </html>
